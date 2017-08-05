@@ -17,8 +17,8 @@ const MAX_IOU_MANTISSA = '9999' + '9999' + '9999' + '9999'; // ..
 const MAX_IOU = new Decimal(`${MAX_IOU_MANTISSA}e${MAX_IOU_EXPONENT}`);
 const MIN_IOU = new Decimal(`${MIN_IOU_MANTISSA}e${MIN_IOU_EXPONENT}`);
 const DROPS_PER_CSC = new Decimal('1e8');
-const MAX_NETWORK_DROPS = new Decimal('4*1e18');
-const MIN_CSC = new Decimal('1e-8')
+const MAX_NETWORK_DROPS = new Decimal(4 * new Decimal('1e18'));
+const MIN_CSC = new Decimal('1e-8');
 const MAX_CSC = MAX_NETWORK_DROPS.dividedBy(DROPS_PER_CSC);
 
 // Never use exponential form
