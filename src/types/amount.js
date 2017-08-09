@@ -107,8 +107,7 @@ const Amount = makeClass({
                 const exponent = ((b1 & 0x3F) << 2) + ((b2 & 0xff) >> 6) - 97;
                 mantissa[1] &= 0x3F;
                 // decimal.js won't accept e notation with hex
-                const value = new Decimal(`${sign}0x${bytesToHex(mantissa)}`)
-                    .times('1e' + exponent);
+                const value = new Decimal(`${sign}0x${bytesToHex(mantissa)}`).times('1e' + exponent);
                 return new this(value, currency, issuer);
             }
 
@@ -149,7 +148,7 @@ const Amount = makeClass({
         return this.value.isZero();
     },
     exponent() {
-        return this.isNative() ? -6 : this.value.e - 15;
+        return this.isNative() ? -8 : this.value.e - 15;
     },
     valueString() {
         return (this.isNative() ? this.value.times(DROPS_PER_CSC) : this.value)

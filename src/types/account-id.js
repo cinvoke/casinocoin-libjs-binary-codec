@@ -11,7 +11,7 @@ const AccountID = makeClass({
     statics: {
         from(value) {
             return value instanceof this ? value :
-                /^r/.test(value) ? this.fromBase58(value) :
+                /^c/.test(value) ? this.fromBase58(value) :
                 new this(value);
         },
         cache: {},

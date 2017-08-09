@@ -1,6 +1,6 @@
 {
     "name": "casinocoin-libjs-binary-codec",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "casinocoin binary codec",
     "files": [
         "distrib/npm/*",
