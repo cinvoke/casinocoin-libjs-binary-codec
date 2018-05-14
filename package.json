@@ -1,6 +1,6 @@
 {
     "name": "casinocoin-libjs-binary-codec",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "casinocoin binary codec",
     "files": [
         "distrib/npm/*",
@@ -37,8 +37,8 @@
     },
     "scripts": {
         "compile": "babel --optional runtime -d distrib/npm/ src/ && cp src/enums/definitions.json distrib/npm/enums",
-        "prepublish": "npm test && npm run compile",
-        "test": "istanbul test _mocha",
+        "prepublish": "npm run compile",
+        "test": "babel-node ./node_modules/.bin/istanbul test ./node_modules/mocha/bin/_mocha",
         "codecov": "cat ./coverage/coverage.json | ./node_modules/codecov.io/bin/codecov.io.js",
         "lint": "if ! [ -f eslintrc ]; then curl -o eslintrc 'https://raw.githubusercontent.com/ripple/javascript-style-guide/es6/eslintrc'; echo 'parser: babel-eslint' >> eslintrc; fi; eslint -c eslintrc src/**/*.js test/*.js examples/*.js"
     },

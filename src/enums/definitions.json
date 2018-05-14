@@ -1595,6 +1595,7 @@
         "PaymentChannelCreate": 13,
         "PaymentChannelFund": 14,
         "PaymentChannelClaim": 15,
+        "KYCSet":30,
         "Invalid": -1
     }
 }
