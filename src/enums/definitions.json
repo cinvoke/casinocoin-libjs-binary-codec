@@ -9,6 +9,7 @@
         "Hash256": 5,
         "UInt8": 16,
         "Vector256": 19,
+        "Vector128": 20,
         "STObject": 14,
         "Unknown": -2,
         "Transaction": 10001,
@@ -1476,6 +1477,16 @@
                 "isSerialized": true,
                 "isSigningField": true,
                 "type": "UInt8"
+            }
+        ],
+        [
+            "Verifications",
+            {
+                "nth": 1,
+                "isVLEncoded": true,
+                "isSerialized": true,
+                "isSigningField": true,
+                "type": "Vector128"
             }
         ]
     ],

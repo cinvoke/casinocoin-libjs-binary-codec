@@ -15,6 +15,7 @@ const {UInt32} = require('./uint-32');
 const {UInt64} = require('./uint-64');
 const {UInt8} = require('./uint-8');
 const {Vector256} = require('./vector-256');
+const {Vector128} = require('./vector-128');
 
 const coreTypes = {
   AccountID,
@@ -31,7 +32,8 @@ const coreTypes = {
   UInt16,
   UInt32,
   UInt64,
-  Vector256
+  Vector256,
+  Vector128
 };
 
 Field.values.forEach(field => {

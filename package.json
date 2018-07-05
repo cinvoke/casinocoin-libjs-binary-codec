@@ -1,6 +1,6 @@
 {
     "name": "casinocoin-libjs-binary-codec",
-    "version": "1.0.4",
+    "version": "1.0.6",
     "description": "casinocoin binary codec",
     "files": [
         "distrib/npm/*",
@@ -14,11 +14,13 @@
     "dependencies": {
         "babel-runtime": "^6.6.1",
         "bn.js": "^4.11.3",
+        "casinocoin-libjs-address-codec": "^1.0.0",
         "create-hash": "^1.1.2",
         "decimal.js": "^5.0.8",
+        "hoek": "^5.0.3",
         "inherits": "^2.0.1",
         "lodash": "^4.12.0",
-        "casinocoin-libjs-address-codec": "^1.0.0"
+        "growl": "1.10.0"
     },
     "devDependencies": {
         "assert-diff": "^1.0.1",
